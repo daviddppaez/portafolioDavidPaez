@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio: David Paez</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Inicio</title>
 </head>
+
 <body>
+    <nav id="myNavbar"></nav>
 
-    <div class="dpNavBar">
-        <header>
-            <h1>David Paez</h1>
-        </header>
-        <nav>
-            <ul>
-                <li class="dpListNavBar"><a href="portfolio.html">Portafolio</a></li>
-                <li class="dpListNavBar"><a href="aboutme.html">Acerca de</a></li>
-                <li class="dpListNavBar"><a href="cvsection.html">CV</a></li>
-                <li class="dpListNavBar"><a href="contactus.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main class="dpSection">
-        <section>
-            <h2>Bienvenido a mi portafolio</h2>
-            <p>Aquí encontrarás todos mis proyectos, aportes y más</p>
+    <main class="dpMain">
+        <section class="myLanding">
+            <div class="myLandingSec">
+                <h2>¡Hola, soy David!</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit odit aperiam inventore officiis iusto dignissimos neque provident consequuntur id minima vero, et, nihil nulla eos optio ratione ipsa dolorem ullam dolor hic sit. Beatae perspiciatis aut odit excepturi magni id ipsa pariatur architecto ad eveniet? Tempora dolorum similique rem nostrum.</p>
+            </div>
+            <div class="myLandingSec">  
+                <button class="myCarruselButton" onclick="mover(-1)">❮</button>
+                <div class="dpMyCarruselLimit">
+                    
+                    <div class="dpMyCarrusel" id="myJSCarrusel">
+                        <div class="MyCarruselContent">
+                            <img src="#" alt="#">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
+                            <a href="#">Llévame</a>
+                        </div>
+                        <div class="MyCarruselContent">
+                            <img src="#" alt="#">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
+                            <a href="#">Llévame</a>
+                        </div>
+                        <div class="MyCarruselContent">
+                            <img src="#" alt="#">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
+                            <a href="#">Llévame</a>
+                        </div>
+                        <div class="MyCarruselContent">
+                            <img src="#" alt="#">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
+                            <a href="#">Llévame</a>
+                        </div>
+                        <div class="MyCarruselContent">
+                            <img src="#" alt="#">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
+                            <a href="#">Llévame</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <button class="myCarruselButton" onclick="mover(1)">❯</button>
+                </div>
         </section>
-        <section>
-            <h3>Ejemplo de proyecto</h3>
-            <div class="dpProyectSummary">
-                <img src="#" alt="Primer proyecto de David Paez">
-                <h3>Proyecto Personal</h3>
-                <p>Creando proyecto personal</p>
-            </div>
-            <div class="dpProyectSummary">
-                <img src="#" alt="Segundo proyecto de David Paez">
-                <h3>Proyecto Grupal (RutaMTB)</h3>
-                <p>Contribuyendo en proyecto grupal</p>
-            </div>
-            <div class="dpProyectSummary">
-                <img src="#" alt="Tercer proyecto de David Paez">
-                <h3>Ejercicios en clase</h3>
-                <p>Ejercicios realizados en Generation</p>
-            </div>
-        </section>
-        <section></section>
     </main>
 
-    <footer class="dpFooter">
-        <div class="dpRedes">
-            <p>Sígueme</p>
-            <a href="#">Discord</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
-
+    <footer id="myFooter"></footer>
 </body>
+
 </html>
