@@ -11,6 +11,22 @@
     font-family: 'Outfit', sans-serif;
 }
 
+body {
+    background: #ecc48c;
+}
+
+    .gradient-bg {
+      position: fixed;
+      inset: 0;
+      filter: blur(120px);
+      z-index: -1;
+    }
+
+/* Hamburguesa */
+.dpBurguer {
+    display: none;
+}
+
 /* Navbar */
 nav {
     display: block;
@@ -26,7 +42,9 @@ nav {
 }
 
 .dpMyRight {
-    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 0;
 }
 
 .dpMyHeader {
@@ -47,13 +65,14 @@ nav {
     background: white;
 }
 
-.dpButtonNormal {
-    background-color: gray;
+.dpButtonGreen {
+    background-color: none;
+    background-color: lightgreen;
 }
 
 /* Footer */
 footer {
-    background: gainsboro;
+    background: rgba(0,0,0,0.5);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -95,11 +114,19 @@ footer {
 
 .myLandingSec {
     flex: 1;
-    
     width: 50%;
     min-width: 400px;
     overflow: hidden;
-    padding: 40px;
+    padding: 60px;
+}
+
+.myLandingSec h2 {
+    font-size: 32px;
+    margin: 21px 0;
+}
+
+.myLandingSec p {
+    font-size: 24px;
 }
 
 /* Carrusel */
@@ -123,7 +150,6 @@ footer {
     }
 
     .myCarruselButton:hover {
-        background: white;
         cursor: pointer;
     }
 
@@ -137,20 +163,44 @@ footer {
     display: inline-block;
     width: 100%;
     height: 300px;
-    background-color: gainsboro;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
     white-space: normal;
     font-size: 18px;
     padding: 20px;
+    vertical-align: top;
 }
+
+.MyCarruselContent video {
+    width: 100%;
+}
+
+.MyCarruselContent img {
+    width: 100%;
+}
+
+.MyCarruselContent a {
+    color: white;
+    background: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 7px 0;
+    font-size: 18px;
+}
+
 /* Portafolio */
 .myPortfolio {
     padding: 20px;
+    text-align: center;
 }
 
 .myStarPortfolio {
     display: inline-block;
-    border: 1px solid black;
-    width: 90%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    min-width: 80%;
+    width: 250px;
     margin: 7px;
     vertical-align: top;
 }
@@ -165,14 +215,24 @@ footer {
     height: 100px;
 }
 
+.myFlexPort {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .myPortfolioDiv {
+    flex: 0 0 250px;
     display: inline-block;
-    border: 1px solid black;
-    width: 250px;
+    background: rgba(0,0,0,0.5);
+    color: white;
     margin: 7px;
     vertical-align: top;
 }
 
+
+.myPortfolio h2 {margin: 24px;}
 .myPortfolioDiv h3, .myPortfolioDiv p {
     margin: 12px 24px 12px;
 }
@@ -181,4 +241,94 @@ footer {
     background: gainsboro;
     width: 100%;
     height: 100px;
+}
+
+.myPortfolioDiv video, .myStarPortfolio video {
+    width: 100%;
+}
+
+
+/* About us*/
+.dpContentPadding {
+    padding: 60px;
+
+}
+
+.dpContentPadding h2 {
+    font-size: 32px;
+}
+
+.dpContentPadding p {
+    font-size: 24px;
+}
+
+.dpContentPadding img {
+    width: 200px;
+    height: 200px;
+    background: gray;
+    display: inline-block;
+    position: relative;
+    right: 0;
+}
+
+@media (max-width: 800px) {
+    /* Navbar */
+nav {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.dpNavSec {
+    display: inline-block;
+    font-size: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 100%;
+}
+
+.dpMyRight {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0;
+    background: gray;
+    z-index: 2;
+}
+
+.dpMyHeader {
+    margin: 10px;
+    font-size: 24px;
+}
+
+.dpNavLink {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100vh;
+    padding: 7px 14px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.dpNavLink:hover {
+    background: white;
+}
+
+.dpButtonGreen {
+    background-color: none;
+    background-color: lightgreen;
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Hamburguesa */
+.dpBurguer {
+    display: inline-block;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 }

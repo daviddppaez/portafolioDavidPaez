@@ -5,64 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
     <title>Inicio</title>
 </head>
 
 <body>
-    <nav id="myNavbar"></nav>
+        <nav id="myNavbar"></nav>
 
-    <main class="dpMain">
-        <section class="myLanding">
-            <div class="myLandingSec">
-                <h2>¡Hola, soy David!</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit odit aperiam inventore officiis iusto dignissimos neque provident consequuntur id minima vero, et, nihil nulla eos optio ratione ipsa dolorem ullam dolor hic sit. Beatae perspiciatis aut odit excepturi magni id ipsa pariatur architecto ad eveniet? Tempora dolorum similique rem nostrum.</p>
-            </div>
-            <div class="myLandingSec">  
-                <button class="myCarruselButton" onclick="mover(-1)">❮</button>
-                <div class="dpMyCarruselLimit">
-                    
-                    <div class="dpMyCarrusel" id="myJSCarrusel">
-                        <div class="MyCarruselContent">
-                            <img src="#" alt="#">
-                            <h3>Título</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
-                            <a href="#">Llévame</a>
+        <main class="dpMain">
+            <section class="myLanding">
+                <div class="myLandingSec">
+                    <h2>¡Hola, soy David!</h2>
+                    <p>Desarrollador Full Stack con habilidades en Java (SpringBoot) JavaScript (Node.js), HTML/CSS (Bootstrap) y SQL (Bases de Datos), enfocado en crear soluciones eficientes, escalables y de alto rendimiento. Graduado en Desarrollo de Aplicaciones Web, con certificaciones en Full Stack y SEO.</p>
+                </div>
+                <div class="myLandingSec">
+                    <button class="myCarruselButton" onclick="mover(-1)">❮</button>
+                    <div class="dpMyCarruselLimit">
+
+                        <div class="dpMyCarrusel" id="myJSCarrusel">
+                            <div class="MyCarruselContent">
+                                <video src="VID_TAREAS.mp4" autoplay loop></video>
+                                <h3>Proyectos</h3>
+                                <p>Descubre mis proyectos</p>
+                                <a href="portfolio.html">Ve a "Proyectos"</a>
+                            </div>
+                            <div class="MyCarruselContent">
+                                <img src="PHOTO_TEST.jpg" alt="Imagen">
+                                <h3>Conocimientos</h3>
+                                <p>Muestro mis fuertes</p>
+                                <a href="blog.html">Ve a "Blog"</a>
+                            </div>
+                            <div class="MyCarruselContent">
+                                <img src="IMG_CARD.jpg" alt="Imagen">
+                                <h3>Colaboración</h3>
+                                <p>Cuenta de GitHub</p>
+                                <a href="https://github.com/daviddppaez" target="_blank">Vamos a GitHub</a>
+                            </div>
                         </div>
-                        <div class="MyCarruselContent">
-                            <img src="#" alt="#">
-                            <h3>Título</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
-                            <a href="#">Llévame</a>
-                        </div>
-                        <div class="MyCarruselContent">
-                            <img src="#" alt="#">
-                            <h3>Título</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
-                            <a href="#">Llévame</a>
-                        </div>
-                        <div class="MyCarruselContent">
-                            <img src="#" alt="#">
-                            <h3>Título</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
-                            <a href="#">Llévame</a>
-                        </div>
-                        <div class="MyCarruselContent">
-                            <img src="#" alt="#">
-                            <h3>Título</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quia.</p>
-                            <a href="#">Llévame</a>
-                        </div>
+
+
                     </div>
-                    
-                    
+                    <button class="myCarruselButton" onclick="mover(1)">❯</button>
                 </div>
-                <button class="myCarruselButton" onclick="mover(1)">❯</button>
-                </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer id="myFooter"></footer>
+        <footer id="myFooter"></footer>
+
 </body>
 
 </html>
